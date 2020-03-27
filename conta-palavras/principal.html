@@ -2,24 +2,38 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Alura Typer</title>
+    <title>Biroliro Digitation</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/google-fonts.css">
+    <link rel="stylesheet" href="css/estilo.css">  
 </head>
 <body>
-    <h1>Treinando Jquery</h1>
-    <p class="frase">Bolsonaro é uma anta</p>
+    <div class="container">
+    <h1 class="center">Biroliro digitation</h1>
+    <p class="frase center">O Presidente biroliro só fala bosta</p>
 
-    <ul class="informações">
-        <li><span id="tamanhoFrase"></span> palavras</li>
-        <li>10 segundos</li>
+    <ul class="informações center">
+        <li>
+            <i class="small material-icons">description</i>
+            <span id="tamanhoFrase"></span> palavras
+        </li>
+        <li>
+            <i class="small material-icons">query_builder</i>
+            <span id="tempo">17</span> segundos
+        </li>
     </ul>
 
     <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
-
+    <div class="center">
+    <button id="reiniciar">Zoar novamente</button>
+    </div>   
     <ul>
-        <li><span id="contaCaracteres"></span> caracteres</li>
-        <li><span id="contaPalavras"></span> palavras</li>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
+        <li class="center"><span id="contaCaracteres"></span> caracteres</li>
+        <li class="center"><span id="contaPalavras"></span> palavras</li>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
